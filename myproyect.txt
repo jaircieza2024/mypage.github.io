@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body style="font-size: x-large;">
+    <h2 style="color:tomato;">Calculadora Basica</h2>
+    <p style="color:green">Soy pequeña pero poderosa </p>
+    <label>Nùmero "a"</label>
+    <input id="en1" type="number" style="font-size: x-large;">
+    <label>Nùmero "b"</label>
+    <input id="en2" type="number" style="font-size: x-large;">
+    <br>
+    <br>
+    <button onclick="suma()" style="font-size: x-large;">a+b</button>
+    <button onclick="resta01()" style="font-size: x-large;">a-b</button>
+    <button onclick="resta02()" style="font-size: x-large;">b-a</button>
+    <button onclick="multiplicacion()" style="font-size: x-large;">a*b</button>
+    <button onclick="division01()" style="font-size: x-large;">a/b</button>
+    <button onclick="division02()" style="font-size: x-large;">b/a</button>
+    <button onclick="potencia01()" style="font-size: x-large;">a**b</button>
+    <button onclick="potencia02()" style="font-size: x-large;">b**a</button>
+    <button onclick="raiz01()" style="font-size: x-large;">sqrt(a)</button>
+    <button onclick="raiz02()" style="font-size: x-large;">sqrt(b)</button>
+    <p id="demo1"></p>
+<script>
+                    function suma(){
+                        a=document.getElementById("en1").value; 
+                        b=document.getElementById("en2").value;
+                         document.getElementById("demo1").innerHTML=Number(a)+Number(b);
+                    }
+                    function resta01(){
+                        a=document.getElementById("en1").value;
+                        b=document.getElementById("en2").value;
+                         document.getElementById("demo1").innerHTML=Number(a)-Number(b);
+                    }
+                    function resta02(){
+                        a=document.getElementById("en1").value;
+                        b=document.getElementById("en2").value;
+                         document.getElementById("demo1").innerHTML=Number(b)-Number(a);
+                    }
+                    function multiplicacion(){
+                        a=document.getElementById("en1").value;
+                        b=document.getElementById("en2").value;
+                         document.getElementById("demo1").innerHTML=Number(a)*Number(b);
+                    }
+                    function division01(){
+                        a=document.getElementById("en1").value;
+                        b=document.getElementById("en2").value;
+                         document.getElementById("demo1").innerHTML=Number(a)/Number(b);
+                    }
+                    function division02(){
+                        a=document.getElementById("en1").value;
+                        b=document.getElementById("en2").value;
+                         document.getElementById("demo1").innerHTML=Number(b)/Number(a);
+                    }
+                    function potencia01(){
+                        a=document.getElementById("en1").value;
+                        b=document.getElementById("en2").value;
+                         document.getElementById("demo1").innerHTML=Number(a)**Number(b);
+                    }
+                    function potencia02(){
+                        a=document.getElementById("en1").value;
+                        b=document.getElementById("en2").value;
+                         document.getElementById("demo1").innerHTML=Number(b)**Number(a);
+                    }
+                    function raiz01(){
+                        a=document.getElementById("en1").value;
+                        b=document.getElementById("en2").value;
+                         document.getElementById("demo1").innerHTML=Math.sqrt(Number(a));
+                    }
+                    function raiz02(){
+                        a=document.getElementById("en1").value;
+                        b=document.getElementById("en2").value;
+                         document.getElementById("demo1").innerHTML=Math.sqrt(Number(b));
+                    }
+</script>
+</body>
+
+</html>
